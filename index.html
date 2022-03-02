@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Credits Sandro Jäger | 2022 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- Primary Meta Tags -->
+    <title>NFT-Platform | Sandro Jäger (Test3)</title>
+    <meta name="title" content="NFT-Platform | Sandro Jäger">
+    <meta name="description" content="Here you can publish your own NFTs as well as buy some cool NFTs from other people. Have some fun!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sandrojaeger.github.io/NFT-Test/">
+    <meta property="og:title" content="NFT-Platform | Sandro Jäger">
+    <meta property="og:description" content="Here you can publish your own NFTs as well as buy some cool NFTs from other people. Have some fun!">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sandrojaeger.github.io/NFT-Test/">
+    <meta property="twitter:title" content="NFT-Platform | Sandro Jäger">
+    <meta property="twitter:description" content="Here you can publish your own NFTs as well as buy some cool NFTs from other people. Have some fun!">
+    <meta property="twitter:image" content="">
+    <title>NFT-Platform | Sandro Jäger (Test3)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body> 
+
+    <div class="phone">
+        <input type="radio" name="radio" id="input_1">
+        <input type="radio" name="radio" id="input_2" checked="checked">
+        <input type="radio" name="radio" id="input_3">
+
+        <label id="input" for="input_1"><i class="fas fa-edit"></i></label>
+        <label id="input" for="input_2"><i class="fas fa-layer-group"></i></i></label>
+        <label id="input" for="input_3"><i class="fas fa-shopping-cart"></i></label>
+
+        <div class="circle"></div>
+
+        <div class="phone_content">
+            <div class="phone_bottom">
+                <span class="indicator"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="slider-outer-wrapper">
+        <div class="slider-inner-wrapper">
+            <div id="slide1" class="slide">
+              <div class="drag-area">
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <header>Drag & Drop to Upload</header>
+                <span>OR</span>
+                <button>Browse File</button>
+                <span>OR</span>
+                <button onclick="window.location.href='https://sandrojaeger.github.io/Art-Maker/'">Generate</button>
+                <input type="file" hidden>
+              </div>
+              <div class="container">
+                  <div class="header">
+                      <h2>Create NFT</h2>
+                  </div>
+                  <form id="form" class="form">
+                      <div class="form-control">
+                          <label for="username">NFT-Name</label>
+                          <input maxlength="20" type="text" placeholder="Name" id="username" />
+                          <i class="fas fa-check-circle"></i>
+                          <i class="fas fa-exclamation-circle"></i>
+                          <small>Error message</small>
+                      </div>
+                      <div class="form-control">
+                          <label for="username">Description</label>
+                          <input maxlength="70" type="text" placeholder="Text" id="email" />
+                          <i class="fas fa-check-circle"></i>
+                          <i class="fas fa-exclamation-circle"></i>
+                          <small>Error message</small>
+                      </div>
+                      <div class="form-control">
+                          <label id="price" for="username">Price</label>
+                          <input type="number" min="0" max="1000" step="0.0005" placeholder="ETH" id="password"/>
+                          <i class="fas fa-check-circle"></i>
+                          <i class="fas fa-exclamation-circle"></i>
+                          <small>Error message</small>
+                      </div>
+                      <button>Submit</button>
+                  </form>
+              </div>
+            </div>
+            <div id="slide2" class="slide">
+              <span class="loader-img2"></span>
+              <div class="btn">
+                <button class="save-btn" id="btn2">
+                  <i class="fa-solid fa-wallet"></i>
+                  <div class="message">Connect</div>
+                  <div class="loader">
+                    <svg x="0px" y="0px" width="25px" height="25px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 5 0;" xml:space="preserve">
+                      <path fill="#FFF" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+                      <animateTransform attributeType="xml"
+                        attributeName="transform"
+                        type="rotate"
+                        from="0 25 25"
+                        to="360 25 25"
+                        dur="780ms"
+                        repeatCount="indefinite"
+                        calcMode="spline"
+                        keySplines="0.44, 0.22, 0, 1"
+                        keyTimes="0;1"/>
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="confirm-message">Connected</div>
+                  <div class="checkmark"></div>
+                </button>
+              </div>
+              <div class="contact-wrapper">
+                <header class="login-cta">
+                  <h2>Login Wallet</h2>
+                </header>
+                <form>
+                  <div class="form-row">
+                    <input id="login-wallet-input-username" type="text" required>
+                    <span>Username or Email</span>
+                  </div>
+                  <div class="form-row">
+                    <input id="login-wallet-input-password" type="password" required>
+                    <span>Password</span>
+                  </div>
+                  <div class="form-row"></div>
+                  <div class="form-row">
+                    <button class="login-wallet-btn" type="submit">Login to your Wallet!</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="slide3" class="slide">
+              <span class="loader-img"></span>
+              <!-- <div class='card'>
+                <img src='https://images.unsplash.com/photo-1597600159211-d6c104f408d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=739&q=80' />
+                
+                <div class='cardContent'>
+                  <h1>The Prism #3232</h1>
+                  <p>A NFT that brings light and joy, the most wanted NFT collection</p>
+                  
+                  <div class='cardContentFooter'>
+                    <div>
+                      <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+                      <p class='eth'>0.005 ETH</p>
+                    </div>
+                    <div>
+                      <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+                      <p>3 days ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+        </div>
+    </div>
+
+<!-- 
+    <button id="generate">Generate</button>
+    <button id="delete">Delete</button> -->
+
+
+
+
+
+
+
+    <div id="popup-tic-tac-toe-create-room" class="popup center">
+      <i class="fa-solid fa-xmark"></i>
+      <lord-icon
+        src="https://cdn.lordicon.com/huwchbks.json"
+        trigger="loop"
+        delay="1000"
+        colors="primary:#121331,secondary:#25ffff"
+        stroke="75"
+        style="width:100px;height:100px">
+      </lord-icon>
+      <div class="titlepopup">
+        Buy?
+      </div>
+      <div class="descriptionpopup">
+        If you buy this NFT, you will be the only owner. Your NFT will be available in your spind.
+      </div>
+      <div class="dismiss-btnpopup">
+        <button id="dismiss-popup-btn" class="dismiss-popup-btn">
+          Buy
+        </button>
+      </div>
+    </div>
+
+
+    <div id="popup-sell" class="popup center">
+      <i class="fa-solid fa-xmark"></i>
+      <div class="titlepopup">
+        Sell?
+      </div>
+      <div class="descriptionpopup">
+        The NFT will be placed on the Marketplace. Please enter your Price:
+      </div>
+      <div class="form-popup-sell">
+        <label id="price" for="username">Price</label>
+        <input type="number" min="0" max="1000" step="0.0005" placeholder="ETH" id="newprice">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="dismiss-btnpopup">
+        <button id="sell-popup-btn" class="sell-popup-btn">
+          Sell
+        </button>
+      </div>
+    </div>
+
+
+
+    <div id="popup-qrcode" class="popup center">
+      <i class="fa-solid fa-xmark"></i>
+      <div id="qrcode"></div>
+    </div>
+
+
+
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-messaging.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
