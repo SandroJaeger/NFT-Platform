@@ -1,0 +1,66 @@
+{
+    "name": "NFT-Platform | Sandro Jäger",
+    "short_name": "NFT-Platform",
+    "description": "Create. Sell. Buy.",
+    "icons": [
+      {
+          "src": "image/NFT-Platform.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "image/NFT-Platform.png",
+          "sizes": "64x64",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+        "src": "image/NFT-Platform.png",
+        "sizes": "48x48",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+          "src": "image/NFT-Platform.png",
+          "sizes": "96x96",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "image/NFT-Platform.png",
+          "sizes": "128x128",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "image/NFT-Platform.png",
+          "sizes": "168x168",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "image/NFT-Platform.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "image/NFT-Platform.png",
+          "sizes": "256x256",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "image/NFT-Platform.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+      }
+    ],
+    "start_url": "/NFT-Platform/index.html",
+    "display": "fullscreen",
+    "theme_color": "#0d1a2d",
+    "background_color": "#0d1a2d"
+}
+  
